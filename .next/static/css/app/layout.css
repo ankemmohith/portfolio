@@ -1608,6 +1608,9 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
 }
+.bg-gray-900\/40 {
+  background-color: rgb(17 24 39 / 0.4);
+}
 .bg-gray-900\/80 {
   background-color: rgb(17 24 39 / 0.8);
 }
@@ -1652,9 +1655,6 @@ video {
 }
 .bg-transparent {
   background-color: transparent;
-}
-.bg-gray-900\/40 {
-  background-color: rgb(17 24 39 / 0.4);
 }
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
@@ -2193,9 +2193,6 @@ video {
 .ease-out {
   animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
-.running {
-  animation-play-state: running;
-}
 .\[--cell-size\:--spacing\(8\)\] {
   --cell-size: var(--spacing(8));
 }
@@ -2427,6 +2424,10 @@ video {
 .hover\:text-muted-foreground:hover {
   color: hsl(var(--muted-foreground));
 }
+.hover\:text-teal-100:hover {
+  --tw-text-opacity: 1;
+  color: rgb(204 251 241 / var(--tw-text-opacity, 1));
+}
 .hover\:text-teal-300:hover {
   --tw-text-opacity: 1;
   color: rgb(94 234 212 / var(--tw-text-opacity, 1));
@@ -2438,10 +2439,6 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-.hover\:text-teal-100:hover {
-  --tw-text-opacity: 1;
-  color: rgb(204 251 241 / var(--tw-text-opacity, 1));
 }
 .hover\:text-yellow-400:hover {
   --tw-text-opacity: 1;
