@@ -8,10 +8,10 @@ import { Menu, X } from "lucide-react"
 const navigation = [
   { name: "Home", href: "#hero" },
   { name: "About", href: "#about" },
+  { name: "Skills", href: "#skills" },
   { name: "Experience", href: "#experience" },
   { name: "Education", href: "#education" },
   { name: "Projects", href: "#projects" },
-  { name: "Skills", href: "#skills" },
   { name: "Contact", href: "#contact" },
 ]
 
@@ -143,9 +143,9 @@ export function Header() {
                 e.preventDefault()
                 handleNavClick("#hero", 0)
               }}
-              aria-label="Emanuel Lázaro - Go to top"
+              aria-label="Mohith Ankem - Go to top"
             >
-              {"<"}emanuellcs{" />"}
+              {"<"}Mohith Ankem{" />"}
             </Link>
 
             {/* Desktop Navigation */}
@@ -294,7 +294,7 @@ export function Header() {
 
           {/* Menu Footer - Fixed at bottom */}
           <div className="border-t border-gray-700/50 p-4 sm:p-6">
-            <p className="text-xs text-gray-500 text-center">© {new Date().getFullYear()} Emanuel Lázaro</p>
+            <p className="text-xs text-gray-500 text-center">© {new Date().getFullYear()} Mohith Ankem</p>
           </div>
         </div>
       </div>

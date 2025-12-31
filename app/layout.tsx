@@ -14,42 +14,42 @@ const firaCode = Fira_Code({
 })
 
 export const metadata: Metadata = {
-  title: "Emanuel Lázaro - Full Stack Software Engineer",
+  title: "Mohith Sai Venkat Ankem - Full Stack Software Engineer",
   description:
-    "Full Stack Software Engineer and Double Degree student in SE & CS. Passionate about building scalable cloud-native architectures and AI/ML solutions.",
+    "Full Stack Software Engineer with MSCS from San José State University. 3+ years building scalable distributed systems, microservices architectures, and cloud-native applications.",
   keywords: [
     "software engineer",
-    "computer science student",
     "full stack",
-    "cloud native",
     "distributed systems",
     "microservices",
-    "typescript",
-    "go",
+    "backend engineering",
+    "cloud native",
+    "java",
     "python",
+    "typescript",
     "react",
-    "next.js",
-    "dotnet",
+    "spring boot",
+    "aws",
     "kubernetes",
     "machine learning"
   ],
-  authors: [{ name: "Emanuel Lázaro" }],
-  creator: "Emanuel Lázaro",
+  authors: [{ name: "Mohith Sai Venkat Ankem" }],
+  creator: "Mohith Sai Venkat Ankem",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://emanuellcs.vercel.app",
-    title: "Emanuel Lázaro - Full Stack Software Engineer",
+    url: "https://mohith-ankem-portfolio.vercel.app",
+    title: "Mohith Sai Venkat Ankem - Full Stack Software Engineer",
     description:
-      "Full Stack Software Engineer and Double Degree student in SE & CS. Passionate about building scalable cloud-native architectures and AI/ML solutions.",
-    siteName: "Emanuel Lázaro's Portfolio",
+      "Full Stack Software Engineer with MSCS from San José State University. 3+ years building scalable distributed systems, microservices architectures, and cloud-native applications.",
+    siteName: "Mohith Sai Venkat Ankem's Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Emanuel Lázaro - Full Stack Software Engineer",
+    title: "Mohith Sai Venkat Ankem - Full Stack Software Engineer",
     description:
-      "Full Stack Software Engineer and Double Degree student in SE & CS. Passionate about building scalable cloud-native architectures and AI/ML solutions.",
-    creator: "@emanuellcs",
+      "Full Stack Software Engineer with MSCS from San José State University. 3+ years building scalable distributed systems, microservices architectures, and cloud-native applications.",
+    creator: "@MohithAnkem",
   },
   robots: {
     index: true,

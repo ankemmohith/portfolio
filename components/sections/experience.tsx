@@ -3,34 +3,46 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 const experiences = [
   {
-    title: "Full Stack Software Engineer",
-    company: "Freelance / Self-Employed",
-    location: "Mucambo, Ceará, Brazil (Remote)",
-    period: "May 2019 - Present",
-    duration: "5+ years",
-    type: "Freelance",
-    description: "Designing and developing scalable full-stack solutions, focusing on cloud-native architectures, microservices, and high-performance systems.",
+    title: "Research Assistant",
+    company: "San Jose State University",
+    location: "San Jose, CA",
+    period: "July 2025 - Present",
+    duration: "Current",
+    type: "Research",
+    description: "Conducting advanced research on Landslide Prediction by engineering ML pipelines and integrating neural networks for terrain analysis.",
     achievements: [
-      "Architecting and building RESTful & GraphQL APIs using Node.js, Go, and Python",
-      "Deploying microservices to multi-cloud environments (AWS, Azure, GCP) using Docker and Kubernetes",
-      "Developing responsive cross-platform applications with React, Vue, React Native, and Electron",
-      "Implementing secure authentication systems and optimizing database performance (SQL & NoSQL)",
-      "Integrating AI/ML models (PyTorch/TensorFlow) into production web applications",
+      "Conducting advanced research on <strong>Landslide Prediction</strong> by engineering <strong>ML pipelines</strong> in Python, integrating CNN–LSTM models for image-based terrain analysis and combining them with structured environmental datasets.",
+      "Implementing <strong>reinforcement-learning–based feature selection</strong> and optimized training workflows using <strong>TensorFlow, PyTorch, and scikit-learn</strong>, improving <strong>model accuracy</strong> and reducing <strong>training time</strong> through automated preprocessing.",
     ],
   },
   {
-    title: "Intern",
-    company: "Arte Gráfica",
-    location: "Mucambo, Ceará, Brazil",
-    period: "August 2024 - December 2024",
-    duration: "5 months",
-    type: "Internship",
-    description: "Gained practical experience in graphic design and digital media production.",
+    title: "Software Engineer",
+    company: "Capgemini (Client - RexelUSA)",
+    location: "Hyderabad, India",
+    period: "July 2020 - July 2023",
+    duration: "3 years",
+    type: "Full-time",
+    description: "Built and optimized distributed microservices architectures handling high-traffic systems with 1000+ concurrent users globally.",
     achievements: [
-      "Developed skills in graphic design and visual communication",
-      "Worked with design software and digital media tools",
-      "Collaborated on various design projects and client deliverables",
-      "Applied technical knowledge in a professional environment",
+      "Migrated a legacy system to a <strong>distributed microservices architecture</strong> using <strong>Java, Spring Boot and PostgreSQL</strong>, boosting <strong>work efficiency by 40%</strong> and supporting <strong>1,000+ concurrent global users</strong>.",
+      "Optimized <strong>server-side performance by 30%</strong> through multi-threading and concurrency control, enabling seamless processing of <strong>1M+ data requests</strong> daily.",
+      "Developed a <strong>React toolkit with 30+ customizable options</strong>, enabling product owners and developers to autonomously create projects, reducing <strong>developer involvement by 90%</strong>.",
+      "Implemented <strong>connection pooling and query caching</strong> in PostgreSQL, integrated <strong>Apache Kafka</strong> for real-time message processing, handling <strong>40,000+ messages per second</strong> and enhancing <strong>system resilience by 50%</strong>.",
+      "Resolved <strong>Redis standby mode issues</strong> during high traffic by implementing <strong>rate limiting (Token Bucket Algorithm)</strong>, keeping CPU consumption under 70% and improving system stability.",
+      "Configured <strong>Jenkins CI/CD pipelines</strong> to automate SDLC for 7 microservices, managing containerized workloads using <strong>AWS ECS</strong>, achieving <strong>99.9% uptime</strong> and improved scalability.",
+    ],
+  },
+  {
+    title: "Web Developer Intern",
+    company: "Exposys Data Labs",
+    location: "Remote",
+    period: "Jan 2020 - Apr 2020",
+    duration: "4 months",
+    type: "Internship",
+    description: "Built responsive web dashboards for visualizing AI/ML model predictions and system performance metrics.",
+    achievements: [
+      "Built <strong>responsive web dashboards</strong> using <strong>React and JavaScript</strong> to visualize model predictions and system performance metrics, improving <strong>accessibility of AI research outputs</strong> for non-technical users.",
+      "Integrated <strong>RESTful APIs</strong> with front-end components to display real-time inference results and sensor data, enabling interactive exploration of computer vision and ML experiments.",
     ],
   },
 ]
@@ -80,7 +92,7 @@ export function Experience() {
                     {exp.achievements.map((achievement, i) => (
                       <li key={i} className="flex items-start text-sm text-gray-300">
                         <span className="text-teal-400 mr-3 mt-1.5 flex-shrink-0">•</span>
-                        <span className="leading-relaxed">{achievement}</span>
+                        <span className="leading-relaxed" dangerouslySetInnerHTML={{ __html: achievement }} />
                       </li>
                     ))}
                   </ul>

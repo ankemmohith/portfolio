@@ -1,35 +1,30 @@
-import { Code, Server, Cloud, Database, Brain, Gamepad2 } from "lucide-react"
+import { Code, Server, Cloud, Database, Brain } from "lucide-react"
 
 const highlights = [
   {
-    icon: Code,
-    title: "Cross-Platform Dev",
-    description: "React, Vue, Angular, React Native, and Electron apps",
-  },
-  {
     icon: Server,
-    title: "API & Microservices",
-    description: "RESTful & GraphQL architectures with async patterns",
+    title: "Backend Engineering",
+    description: "Microservices architectures, API design, and distributed system optimization",
   },
   {
     icon: Cloud,
-    title: "Cloud Native",
-    description: "AWS, Azure, GCP deployments with Docker & K8s",
+    title: "Cloud Infrastructure",
+    description: "Multi-cloud deployments with AWS, Azure, GCP, Docker & Kubernetes",
   },
   {
     icon: Database,
-    title: "Database Architecture",
-    description: "Scalable SQL and NoSQL database solutions",
+    title: "Data Systems",
+    description: "Scalable SQL and NoSQL database solutions with optimization",
+  },
+  {
+    icon: Code,
+    title: "Full Stack Development",
+    description: "End-to-end systems from API design to deployment and monitoring",
   },
   {
     icon: Brain,
-    title: "AI/ML Systems",
-    description: "PyTorch, TensorFlow, and LLM integration",
-  },
-  {
-    icon: Gamepad2,
-    title: "Game Engine Dev",
-    description: "C++, C#, Rust, Physics, and Math optimization",
+    title: "AI/ML Integration",
+    description: "Integrating machine learning models into production systems",
   },
 ]
 
@@ -54,22 +49,19 @@ export function About() {
           <div className="space-y-8">
             <div className="space-y-6 text-lg text-gray-300 leading-relaxed text-center max-w-3xl mx-auto">
               <p>
-                I am a Full Stack Software Engineer and a double-degree student in <strong>Software Engineering & Computer Science</strong>, 
-                based in Mucambo, Brazil. My development philosophy centers on creating code that scales, maintains, and delivers real value.
+                I'm a <strong>Full Stack Software Engineer</strong> with a <strong>Master's degree in Computer Science</strong> from San José State University and <strong>3+ years of professional experience</strong> building and scaling distributed systems in real-world production environments.
               </p>
               <p>
-                My primary focus lies in <strong>Full Stack Development</strong> and <strong>Cloud-Native Architecture</strong>. 
-                I specialize in building scalable web applications, exploring microservices architectures, and deploying robust systems 
-                to multi-cloud environments using modern orchestration tools.
+                My work has centered around designing <strong>microservices-based architectures</strong>, building reliable <strong>backend systems</strong>, and deploying <strong>cloud-native applications</strong> that can handle high traffic and large volumes of data. I've worked extensively with <strong>event-driven systems, caching layers, relational databases, and CI/CD pipelines</strong> to deliver services that are resilient, performant, and easy to evolve over time.
               </p>
               <p>
-                Beyond standard application development, I use <strong>Game Development</strong> as a multidisciplinary laboratory. 
-                In my spare time, I create engines and games using <strong>C++, C#, and Rust</strong>. This hobby consolidates my 
-                Computer Science fundamentals by combining physics, mathematics, logic, and optimization into complex engineering projects.
+                On the frontend, I enjoy crafting clean, responsive user experiences using modern frameworks, with a strong focus on usability and maintainability. I like working <strong>end-to-end</strong> — from API design and data flow to deployment and monitoring — because it helps me understand how systems behave as a whole, not just in isolation.
               </p>
               <p>
-                I am currently open to <strong>Internships</strong> and <strong>Junior Engineering</strong> roles where I can apply my skills 
-                in backend engineering, DevOps, and AI/ML to build tomorrow's solutions with today's code.
+                I'm particularly interested in <strong>backend engineering, distributed systems, cloud infrastructure</strong>, and the growing intersection of software engineering with <strong>AI/ML-driven products</strong>. I care deeply about writing <strong>code that scales, systems that last, and solutions that actually solve problems</strong>.
+              </p>
+              <p>
+                I'm currently open to <strong>internship, part-time, and full-time opportunities</strong> in Software Engineering and AI/ML-focused roles, where I can continue building impactful systems and learning from strong engineering teams.
               </p>
             </div>
 

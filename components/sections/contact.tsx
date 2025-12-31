@@ -1,14 +1,14 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Mail, Github, Linkedin, Brain } from "lucide-react"
+import { Mail, Github, Linkedin } from "lucide-react"
 
 const contactMethods = [
   {
     title: "Email",
-    description: "emanuellzr01@outlook.com",
+    description: "mohith.ankem@gmail.com",
     icon: Mail,
-    href: "mailto:emanuellzr01@outlook.com",
+    href: "mailto:mohith.ankem@gmail.com",
     buttonText: "Send Email",
     color: "text-blue-400",
   },
@@ -16,23 +16,15 @@ const contactMethods = [
     title: "LinkedIn",
     description: "Connect for professional opportunities",
     icon: Linkedin,
-    href: "https://linkedin.com/in/emanuellcs",
+    href: "https://www.linkedin.com/in/mohith-ankem/",
     buttonText: "View Profile",
     color: "text-blue-500",
-  },
-  {
-    title: "Hugging Face",
-    description: "Follow my AI/ML models and datasets",
-    icon: Brain,
-    href: "https://huggingface.co/emanuellcs",
-    buttonText: "View Models",
-    color: "text-yellow-400",
   },
   {
     title: "GitHub",
     description: "Explore my code and contributions",
     icon: Github,
-    href: "https://github.com/emanuellcs",
+    href: "https://github.com/MohithAnkem",
     buttonText: "Visit GitHub",
     color: "text-gray-400",
   },
@@ -50,18 +42,15 @@ export function Contact() {
           
           <div className="max-w-3xl mx-auto space-y-4 text-gray-300 leading-relaxed">
             <p className="text-xl">
-              I am currently open to <strong>Internships</strong>, <strong>Junior Engineering</strong> roles, and 
-              <strong>Open Source Collaboration</strong> worldwide.
+              I'm currently open to <strong>internship, part-time, and full-time opportunities</strong> in <strong>Software Engineering</strong> and <strong>AI/ML-focused roles</strong>.
             </p>
             <p>
-              Whether you want to discuss Cloud-Native Architecture, AI/ML pipelines, or Game Engine development 
-              (check my <Link href="https://gitlab.com/emanuellcs" className="text-teal-400 hover:underline">GitLab</Link> for that!), 
-              I'd love to hear from you.
+              Whether you want to discuss <strong>distributed systems, cloud infrastructure, backend optimization</strong>, or explore how we can build impactful solutions together, I'd love to hear from you.
             </p>
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {contactMethods.map((method) => {
             const Icon = method.icon
             return (
@@ -78,7 +67,7 @@ export function Contact() {
                     {method.description}
                   </CardDescription>
 
-                  <Button asChild className="w-full mt-auto" leftIcon={<Icon size={18} />}>
+                  <Button asChild className="w-full mt-auto">
                     <Link
                       href={method.href}
                       target={method.href.startsWith("http") ? "_blank" : undefined}

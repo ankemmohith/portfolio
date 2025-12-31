@@ -4,21 +4,21 @@ import { Github, Linkedin, Mail } from "lucide-react"
 const socialLinks = [
   {
     name: "GitHub",
-    href: "https://github.com/emanuellcs",
+    href: "https://github.com/MohithAnkem",
     icon: Github,
-    label: "Visit Emanuel's GitHub profile",
+    label: "Visit Mohith's GitHub profile",
   },
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/emanuel-lázaro-custódio-silva-2a8130362",
+    href: "https://www.linkedin.com/in/mohith-ankem",
     icon: Linkedin,
-    label: "Connect with Emanuel on LinkedIn",
+    label: "Connect with Mohith on LinkedIn",
   },
   {
     name: "Email",
-    href: "mailto:emanuellzr01@outlook.com",
+    href: "mailto:Mohith.Ankem@gmail.com",
     icon: Mail,
-    label: "Send Emanuel an email",
+    label: "Send Mohith an email",
   },
 ]
 
@@ -29,7 +29,7 @@ export function Footer() {
         <div className="flex flex-col items-center space-y-6">
           {/* Logo */}
           <div className="flex items-center justify-center w-16 h-16 bg-primary-400/10 rounded-full">
-            <span className="text-2xl font-bold text-teal-400">EL</span>
+            <span className="text-2xl font-bold text-teal-400">MA</span>
           </div>
 
           {/* Social Links */}
@@ -53,7 +53,7 @@ export function Footer() {
 
           {/* Copyright */}
           <div className="text-center text-gray-400 text-sm">
-            <p>© {new Date().getFullYear()} Emanuel Lázaro. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Mohith Ankem. All rights reserved.</p>
             <p className="mt-1">Built with Next.js, TypeScript, and Tailwind CSS</p>
           </div>
         </div>

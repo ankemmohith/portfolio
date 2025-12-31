@@ -5,42 +5,55 @@ const skillCategories = [
     title: "Languages",
     icon: Code,
     skills: [
-      { name: "TypeScript", icon: "📘" },
-      { name: "JavaScript", icon: "⚡" },
-      { name: "Go", icon: "🐹" },
-      { name: "Python", icon: "🐍" },
-      { name: "C#", icon: "💜" },
-      { name: "C++", icon: "⚙️" },
-      { name: "Rust", icon: "🦀" },
       { name: "Java", icon: "☕" },
+      { name: "JavaScript", icon: "⚡" },
+      { name: "Python", icon: "🐍" },
+      { name: "TypeScript", icon: "📘" },
+      { name: "HTML", icon: "🌐" },
+      { name: "CSS", icon: "🎨" },
+      { name: "C#", icon: "💜" },
     ],
   },
   {
-    title: "Backend Development",
+    title: "Libraries",
     icon: Server,
     skills: [
-      { name: "Node.js", icon: "🟢" },
-      { name: "NestJS", icon: "🦁" },
-      { name: "Go Gin/Fiber", icon: "🚀" },
+      { name: "React.js", icon: "⚛️" },
+      { name: "Angular", icon: "🅰️" },
       { name: "FastAPI", icon: "⚡" },
-      { name: ".NET Core", icon: "🟣" },
-      { name: "Spring Boot", icon: "🍃" },
+      { name: "Flask", icon: "🍶" },
+      { name: "Node.js", icon: "🟢" },
+      { name: "Express.js", icon: "🚂" },
+      { name: "Redux", icon: "🔄" },
       { name: "GraphQL", icon: "◈" },
-      { name: "Express", icon: "🚂" },
     ],
   },
   {
-    title: "Frontend Development",
+    title: "Tools & Frameworks",
     icon: Layout,
     skills: [
-      { name: "React", icon: "⚛️" },
-      { name: "Next.js", icon: "▲" },
-      { name: "Vue.js", icon: "💚" },
-      { name: "Angular", icon: "🅰️" },
-      { name: "Tailwind", icon: "🌊" },
-      { name: "Vite", icon: "⚡" },
-      { name: "HTML5", icon: "🌐" },
-      { name: "CSS3", icon: "🎨" },
+      { name: "Spring Boot", icon: "🍃" },
+      { name: "Pandas", icon: "🐼" },
+      { name: "Excel", icon: "📊" },
+      { name: "Numpy", icon: "🔢" },
+      { name: "Tensorflow", icon: "🧠" },
+      { name: "Git", icon: "📝" },
+      { name: "Android", icon: "🤖" },
+      { name: "JIRA", icon: "🎯" },
+    ],
+  },
+  {
+    title: "Databases & Cloud",
+    icon: Database,
+    skills: [
+      { name: "MySQL", icon: "🐬" },
+      { name: "MS SQL", icon: "💾" },
+      { name: "MongoDB", icon: "🍃" },
+      { name: "PostgreSQL", icon: "🐘" },
+      { name: "Neo4J", icon: "🕸️" },
+      { name: "Oracle", icon: "📖" },
+      { name: "NoSQL", icon: "🔑" },
+      { name: "DynamoDB", icon: "⚡" },
     ],
   },
   {
@@ -49,40 +62,11 @@ const skillCategories = [
     skills: [
       { name: "AWS", icon: "☁️" },
       { name: "Azure", icon: "🟦" },
-      { name: "GCP", icon: "🌈" },
+      { name: "Google Cloud", icon: "🌈" },
       { name: "Docker", icon: "🐳" },
       { name: "Kubernetes", icon: "⚓" },
       { name: "Terraform", icon: "🏗️" },
-      { name: "CI/CD", icon: "🔄" },
-      { name: "Nginx", icon: "🚦" },
-    ],
-  },
-  {
-    title: "AI & Data Science",
-    icon: Brain,
-    skills: [
-      { name: "PyTorch", icon: "🔥" },
-      { name: "TensorFlow", icon: "🧠" },
-      { name: "Hugging Face", icon: "🤗" },
-      { name: "Scikit-learn", icon: "📊" },
-      { name: "Pandas", icon: "🐼" },
-      { name: "NumPy", icon: "🔢" },
-      { name: "LLMs", icon: "🤖" },
-      { name: "MLOps", icon: "⚙️" },
-    ],
-  },
-  {
-    title: "Databases & Tools",
-    icon: Database,
-    skills: [
-      { name: "PostgreSQL", icon: "🐘" },
-      { name: "MongoDB", icon: "🍃" },
-      { name: "Redis", icon: "🔴" },
-      { name: "Git", icon: "📝" },
-      { name: "Linux (Arch)", icon: "🐧" },
-      { name: "VS Code", icon: "💻" },
-      { name: "Postman", icon: "🚀" },
-      { name: "Vim", icon: "⌨️" },
+      { name: "GitLab CI", icon: "🔄" },
     ],
   },
 ]
@@ -97,39 +81,32 @@ export function Skills() {
           </h2>
           <div className="w-20 h-1 bg-teal-400 mx-auto rounded-full" />
           <p className="text-xl text-gray-300 mt-6 max-w-3xl mx-auto">
-            I build scalable systems using a modern, polyglot technology stack, ranging from high-performance 
-            backend services to intuitive frontend interfaces and advanced AI models.
+            I build scalable systems using a modern tech stack spanning full-stack development, cloud infrastructure, and data systems.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {skillCategories.map((category) => {
-            const CategoryIcon = category.icon
+            const Icon = category.icon
             return (
               <div
                 key={category.title}
-                className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700 hover:border-teal-400/50 transition-all duration-300 hover:bg-teal-400/5 group"
+                className="group p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-teal-400/50 transition-all duration-300 hover:bg-teal-400/5"
               >
-                <div className="text-center mb-6">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-teal-400/10 rounded-2xl mb-4 group-hover:bg-teal-400/20 transition-colors">
-                    <CategoryIcon size={32} className="text-teal-400" />
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-10 h-10 bg-teal-400/10 rounded-lg flex items-center justify-center group-hover:bg-teal-400/20 transition-colors">
+                    <Icon size={20} className="text-teal-400" />
                   </div>
-                  <h3 className="text-xl font-bold text-teal-400 mb-2">{category.title}</h3>
-                  <div className="w-12 h-0.5 bg-teal-400 mx-auto rounded-full" />
+                  <h3 className="text-xl font-semibold text-white">{category.title}</h3>
                 </div>
-
                 <div className="grid grid-cols-2 gap-3">
                   {category.skills.map((skill) => (
                     <div
                       key={skill.name}
-                      className="flex flex-col items-center p-3 rounded-xl bg-gray-900/50 hover:bg-teal-400/10 transition-all duration-300 hover:scale-105 group/skill"
+                      className="flex items-center gap-2 p-3 bg-gray-700/30 rounded-lg hover:bg-teal-400/10 transition-colors"
                     >
-                      <span className="text-xl mb-2 group-hover/skill:scale-110 transition-transform">
-                        {skill.icon}
-                      </span>
-                      <span className="text-xs font-medium text-center text-gray-300 group-hover/skill:text-teal-400 transition-colors leading-tight">
-                        {skill.name}
-                      </span>
+                      <span className="text-lg">{skill.icon}</span>
+                      <span className="text-sm text-gray-300 font-medium">{skill.name}</span>
                     </div>
                   ))}
                 </div>
