@@ -3,6 +3,21 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 const experiences = [
   {
+    title: "Full Stack Developer",
+    company: "G2G APP (Generation to Generation, Inc)",
+    location: "San Jose, CA",
+    period: "Dec 2025 - Present",
+    duration: "Current",
+    type: "Full-time",
+    description:
+      "Building and enhancing features for a production mobile application with a Flutter frontend and .NET backend, delivering secure, end-to-end user experiences.",
+    achievements: [
+      "Built and enhanced features for a <strong>production mobile application</strong> using <strong>Flutter (Dart)</strong> with a <strong>.NET backend</strong>, implementing new timeline and content-management workflows backed by <strong>SQL Server</strong> and secure APIs.",
+      "Designed and tested backend APIs with <strong>environment-safe local setups</strong>, database migrations, and feature isolation, ensuring <strong>zero impact on production systems</strong> during development.",
+      "Integrated authentication and authorization flows using <strong>Firebase/Auth services</strong> and <strong>Azure-hosted cloud infrastructure</strong>, collaborating across frontend and backend to deliver robust, end-to-end functionality.",
+    ],
+  },
+  {
     title: "Research Assistant",
     company: "San Jose State University",
     location: "San Jose, CA",
